@@ -27,7 +27,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo Creating imagedefinitions.json
-      - printf '[{"name":"ecs-task-service-qitywt1r","imageUri":"%s"}]' "$REPOSITORY_URI:$IMAGE_TAG" > imagedefinitions.json
+      - printf '[{"name":"ecs-web","imageUri":"%s"}]' "$REPOSITORY_URI:$IMAGE_TAG" > imagedefinitions.json
       - cat imagedefinitions.json
 
 artifacts:
